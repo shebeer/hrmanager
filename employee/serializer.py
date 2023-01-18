@@ -32,7 +32,7 @@ class EmployeeSerializer(serializers.ModelSerializer):
         if User.objects.filter(email=employee_data["email"]).first():
             raise serializers.ValidationError(EMAIL_ID_EXISTING_MESSAGE)
 
-        if User.objects.filter(email=employee_data["username"]).first():
+        if User.objects.filter(username=employee_data["username"]).first():
             raise serializers.ValidationError(USER_NAME_EXISTING_MESSAGE)
 
         user = User.objects.create(**employee_data)
