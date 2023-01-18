@@ -1,14 +1,7 @@
 # HR Manager backend application
 ## Setup
-The first thing to do is to clone the repository:
-
-```sh
-$ git clone https://github.com/gocardless/sample-django-app.git
-$ cd hrmanager
-```
 
 Create a virtual environment to install dependencies in and activate it:
-
 ```sh
 $ virtualenv env
 $ source env/bin/activate
